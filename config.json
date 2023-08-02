@@ -1,0 +1,73 @@
+{
+  "app": {
+    "name": "raung1",
+    "host": "localhost",
+    "code": "SMR1",
+    "port": "7706",
+    "environment": "development",
+    "log": {
+      "level": "0"
+    },
+    "auth": {
+      "username": "RNG1",
+      "password": "ADMRNG1"
+    }
+  },
+  "kafka": {
+    "broker": "localhost:9092",
+    "groups": {
+      "user-creation-polling": "databx.user"
+    },
+    "topics": {
+      "user-creation-polling": "databx.user.creation"
+    },
+    "partition": 0,
+    "min-bytes": 10e3,
+    "max-bytes": 10e6,
+    "max-wait": 1
+  },
+  "url":{
+    "semeru1": {
+      "url": "localhost:7716/semeru1/api/v1/",
+      "auth": {
+        "username": "SMR1",
+        "password": "ADMSMR1"
+      }
+    },
+    "semeru2": {
+      "url": "localhost:7718/semeru2/api/v1/",
+      "auth": {
+        "username": "SMR2",
+        "password": "ADMSMR2"
+      }
+    },
+    "semeru3": {
+      "url": "localhost:7720/semeru3/api/v1/",
+      "auth": {
+        "username": "SMR3",
+        "password": "ADMSMR3"
+      }
+    },
+    "bromo1": {
+      "url": "localhost:7726/bromo1/api/v1/",
+      "auth": {
+        "username": "BRM1",
+        "password": "ADMBRM1"
+      }
+    },
+    "bromo2": {
+      "url": "localhost:7728/bromo2/api/v1/",
+      "auth": {
+        "username": "BRM2",
+        "password": "ADMBRM2"
+      }
+    },
+    "sumbing1": {
+      "url": "localhost:7776/sumbing1/api/v1/",
+      "auth": {
+        "username": "SBG1",
+        "password": "ADMSBG1"
+      }
+    }
+  }
+}
